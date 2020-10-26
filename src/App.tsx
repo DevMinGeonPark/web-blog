@@ -3,6 +3,8 @@ import Main from './component/Main';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import 'style/Style.scss';
+
 
 const App: React.FC = () => {
     return (

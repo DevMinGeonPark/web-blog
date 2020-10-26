@@ -1,14 +1,14 @@
 import React from 'react';
+import 'style/Footer.scss';
 
 const Footer: React.FC = () => {
     return (
-        <footer>
+        <footer className="mainFooter">
             <div className="container">
-                <p>Copyright © 2020 All Right <em>DevMinGeonPark</em></p>
+                <p><strong>Copyright © 2020 All Right</strong><em> MinGeonPark</em></p>
                 <p>
-                    <a href="test">GitHub</a>
-                    <a href="test">Blog</a>
-                    <a href="tset">Repository</a>
+                    <a href="test">GitHub  .  </a>
+                    <a href="test">Repository</a>
                 </p>
             </div>
         </footer>
