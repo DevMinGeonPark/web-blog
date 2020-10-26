@@ -8,7 +8,7 @@ import 'style/Style.scss';
 
 const App: React.FC = () => {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={"/Blog"}>
             <>
                 <Header></Header>
                 <Switch>
