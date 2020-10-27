@@ -2,6 +2,8 @@
 $footercolor: #a8b5c0;
 .mainFooter {
     background-color: #242729;
+    position: relative;
+    z-index: 1;
     padding: 5px 8px 5px 8px;
     font-size: 13px;
     color: $footercolor;

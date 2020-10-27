@@ -1,0 +1,11 @@
+@import './Variables.scss';
+@import './partials/Animation';
+@import './partials/Sidebar';
+@import './partials/Menu';
+@import './partials/PopperArrow';
+@import './partials/ReactSlidedown';
+@import '../App.scss';
+
+.closed {
+    display: none;
+}

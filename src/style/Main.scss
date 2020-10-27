@@ -1,5 +1,18 @@
 @import "./Style.scss";
-.test {
+.from {
     border-bottom: $testborder;
     padding-bottom: 10px;
+    position: relative;
+    top:50px;
+    float: inline-start;
+    .contentss {
+        overflow: hidden;
+    }
+    
+    > li {
+        display: block;
+        overflow: hidden;
+        list-style: none;
+        
+    }
 }
