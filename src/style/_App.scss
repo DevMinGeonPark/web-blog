@@ -1,0 +1,18 @@
+@import "./_Variables";
+@import "./Mixin";
+
+.sidebar-mask {
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.closed {
+    display: none;
+}
+@include fullScreenSidebar {
+    .closed {
+      display: block;
+    }
+  }

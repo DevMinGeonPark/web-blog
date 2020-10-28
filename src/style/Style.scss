@@ -1,4 +1,10 @@
-$testborder: 1px solid black;
+//@import './_Main';
+@import "./_Header";
+@import "./_Footer";
+@import './_App';
+@import "./pro-sidebar-style/_Pro-sidebar-style";
+@import "./Variables";
+@import "./Mixin";
 
 body {
     margin: 0px;

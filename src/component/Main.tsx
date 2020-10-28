@@ -1,5 +1,4 @@
 import React from 'react';
-import 'style/Main.scss';
 
 const Main: React.FC = () => {
     return (
@@ -12,10 +11,12 @@ const Main: React.FC = () => {
                     구현할 기능리스트
                 </p>
                 <ul>
-                    <li>사이드 바 기능</li>
+                    <li>메인 스타일 수정
+                        사이드바가 1150을 넘으면 생성되는데 생성될떄 몌인의 패딩수정
+                    </li>
                     <li>검색 기능</li>
                     <li>반응형 디자인</li>
-                    <li>ex</li>
+                    <li>메인형태 스타일 추가</li>
                     <li>ex</li>
                     <li>ex</li>
                     <li>ex</li>

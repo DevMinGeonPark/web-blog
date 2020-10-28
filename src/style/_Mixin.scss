@@ -1,0 +1,43 @@
+@import "./Variables";
+
+@mixin mobile {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin fullScreen {
+    @media (max-width: #{$breakpoint-fullScreen}) {
+        @content;
+    }
+}
+
+@mixin fullscreenPadding {
+    @media (min-width: #{$breakpoint-fullScreen}) {
+        @content;
+    }
+}
+
+@mixin serachboxhiden {
+    @media (max-width: #{$breakpoint-searchbox}) {
+        @content;
+    }
+}
+
+@mixin fullScreenSidebar {
+    @media (min-width: #{$breakpoint-fullScreen}) {
+        @content;
+    }
+}

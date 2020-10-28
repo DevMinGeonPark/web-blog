@@ -1,11 +1,12 @@
 .pro-sidebar {
     color: $sidebar-color;
+    padding-top: 73px;
     height: 100%;
     width: $sidebar-width;
     min-width: $sidebar-width;
     text-align: left;
     position: relative;
-    z-index: 2;
+    z-index: 8;
     > .pro-sidebar-inner {
       background: $sidebar-bg-color;
       height: 100%;
@@ -32,6 +33,7 @@
         display: flex;
         flex-direction: column;
         z-index: 101;
+        border-right: 1px solid rgb(221, 221, 221);
   
         .pro-sidebar-header {
           border-bottom: 1px solid rgba($sidebar-color, 0.2);
@@ -59,5 +61,5 @@
       background-color: rgba(#000, 0.3);
       z-index: 100;
      display: none;
-}
+    }
 }
