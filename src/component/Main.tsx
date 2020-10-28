@@ -17,13 +17,13 @@ const Main: React.FC = () => {
                     <li>검색 기능</li>
                     <li>반응형 디자인</li>
                     <li>메인형태 스타일 추가</li>
-                    <li>ex</li>
-                    <li>ex</li>
-                    <li>ex</li>
-                    <li>ex</li>
-                    <li>ex</li>
-                    <li>ex</li>
-                    <li>ex</li>
+                    <li>footer z-index 30</li>
+                    <li>header nav bar z-index 30</li>
+                    <li>sidebar-mask z-index:9</li>
+                    <li>pro-sdebar z-index 8</li>
+                    <li>pro-sidebar-inner z-index101</li>
+                    <li>img-sidebar-bg 100</li>
+                    <li>pro-sidebar-layout 101</li>
                     <li>ex</li>
                     <li>ex</li>
                     <li>ex</li>

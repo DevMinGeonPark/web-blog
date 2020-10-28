@@ -11,6 +11,7 @@
 .closed {
     display: none;
 }
+
 @include fullScreenSidebar {
     .closed {
       display: block;
