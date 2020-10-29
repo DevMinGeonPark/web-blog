@@ -1,1 +1,17 @@
-//@import './Style.scss';
+@import "./_Mixin";
+@import "./_Variables";
+
+.from {
+    .maincontent {
+        padding: 78px 40px 0;
+        width: auto;
+        max-width: inherit;
+        min-height: 880px;
+    }
+    @include fullscreenPadding {
+        .maincontent {
+            margin: 0 240px;
+            padding: 100px 40px 0;
+        }
+    }
+}

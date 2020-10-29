@@ -1,16 +1,21 @@
 .pro-sidebar {
     color: $sidebar-color;
-    padding-top: 73px;
     width: $sidebar-width;
     min-width: $sidebar-width;
     text-align: left;
     position: relative;
     z-index: 8;
+    
+
     > .pro-sidebar-inner {
       background: $sidebar-bg-color;
+      padding-top: 73px;
       height: 100%;
+      transition: width 0.7s;
+      width: 0%;
       position: fixed;
       z-index: 101;
+      
   
       > img.sidebar-bg {
         width: 100%;
@@ -48,6 +53,15 @@
           padding: 0;
           margin: 0;
         }
+      }
+    }
+    .closed {
+      width: 28%;
+      transition: width 0.7s;
+    }
+    @include fullscreenPadding {
+      .pro-sidebar-inner {
+        width: 12%;
       }
     }
 }

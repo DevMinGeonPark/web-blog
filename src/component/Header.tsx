@@ -1,38 +1,45 @@
-import React, {useState,useEffect}from 'react';
+import React, { useState, useEffect } from 'react';
 import { BsList, BsLink45Deg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 const Header: React.FC = () => {
-    const [open,setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
+    const [searchOpen, setSearchOpen] = useState(true);
 
     useEffect(() => {
-        var a = document.getElementsByClassName('sidebar')[0];
-        open? a.classList.remove('closed'):a.classList.add('closed');
+        const sidebar = document.getElementsByClassName('pro-sidebar-inner')[0];
+        open ? sidebar.classList.remove('closed') : sidebar.classList.add('closed');
+        const searchbox = document.querySelector('input');
+        searchOpen ? searchbox?.classList.remove('focus') : searchbox?.classList.add('focus');
+
+
     })
 
     return (
         <header className="navbar">
             <div className="sidebar-button" onClick={() => setOpen(!open)}>
-                <BsList size="25px" color="black" role="img" className="icon"/>
+                <BsList size="25px" color="black" role="img" className="icon" />
+            </div>
+            <Link to="/profile">
+                <div className="profile">
+                    <figure>
+                        <img src="https://s3.ivisa.com/website-assets/blog/id-photo2.jpg" alt="profile" />
+                    </figure>
+                    <div>
+                        <strong>Dev MinGeonPark</strong>
+                        <em>Stay hungry Stay Foolish</em>
+                    </div>
                 </div>
-            <a href="1">
-                <figure>
-                    <img src="https://s3.ivisa.com/website-assets/blog/id-photo2.jpg" alt="profile" />
-                </figure>
-                <div>
-                    <strong>Dev MinGeonPark</strong>
-                    <em>Stay hungry Stay Foolish</em>
-                </div>
-            </a>
+            </Link>
             <div className="links">
                 <div className="search-box">
-                    <input aria-label="Search" autoComplete="off" />
+                    <input aria-label="Search" autoComplete="off" placeholder="아직 구현되지 않았습니다." onClick={() => setSearchOpen(!searchOpen)} />
                 </div>
-                <nav className="nav-links can-hide">
+                <nav className="nav-links">
                     <div className="nav-item">
-                        <Link to="/">Home</Link></div>
-                    <div className="nav-item"><a href="https://github.com/DevMinGeonPark?tab=repositories" target="_block">Repository<BsLink45Deg /></a></div>
+                        <Link to="/" className="home-non-nide">Home</Link></div>
+                    <div className="nav-item "><a href="https://github.com/DevMinGeonPark?tab=repositories" target="_block" className="can-hide">Repository<BsLink45Deg /></a></div>
                 </nav>
             </div>
         </header>

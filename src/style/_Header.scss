@@ -38,7 +38,7 @@
         vertical-align: middle; 
     }
     
-    a {
+    .profile {
         @include ProfileStyle();
         font-weight: 500;
         padding-left: 3rem;
@@ -148,14 +148,23 @@
                 margin-left: 0;
             }
         }
-        @include serachboxhiden {
+        @include serachboxhiden {   
             .search-box input{
-                width: 0;    
-                border: none;
+                cursor: pointer;
+                width: 0px;
+                border-color: transparent;
+                position: relative;
+            }
+            .search-box input:focus {
+                width: 10rem;
+                cursor: text;
+                border: 1px solid #cfd4db;
+                transition: width 0.5s;
             }
             .can-hide {
                 display: none;
             }
+
             
         }
     }

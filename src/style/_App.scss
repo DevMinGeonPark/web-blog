@@ -1,5 +1,6 @@
 @import "./_Variables";
 @import "./Mixin";
+@import "./pro-sidebar-style/Variables";
 
 .sidebar-mask {
     z-index: 9;
@@ -8,12 +9,9 @@
     display: none;
 }
 
-.closed {
-    display: none;
-}
 
 @include fullScreenSidebar {
-    .closed {
-      display: block;
-    }
+    // .closed {
+    //   display: block;
+    // }
   }

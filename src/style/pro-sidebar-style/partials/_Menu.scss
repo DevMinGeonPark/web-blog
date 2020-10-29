@@ -21,6 +21,7 @@
   }
   
   .pro-sidebar {
+    
     .pro-menu {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -30,7 +31,6 @@
           > .pro-inner-list-item {
             position: relative;
             background-color: $submenu-bg-color;
-  
             > div > ul {
               padding-top: 15px;
               padding-bottom: 15px;
