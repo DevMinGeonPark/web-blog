@@ -3,12 +3,12 @@ import { BsList, BsLink45Deg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const [searchOpen, setSearchOpen] = useState(true);
 
     useEffect(() => {
         const sidebar = document.getElementsByClassName('pro-sidebar-inner')[0];
-        open ? sidebar.classList.remove('closed') : sidebar.classList.add('closed');
+        open ?  sidebar.classList.add('closed'):sidebar.classList.remove('closed');
         const searchBox = document.querySelector('input');
         searchOpen ? searchBox?.classList.remove('focus') : searchBox?.classList.add('focus');
     })
