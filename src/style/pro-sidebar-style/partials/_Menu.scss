@@ -4,9 +4,9 @@
       display: inline-block;
       width: 4px;
       min-width: 4px;
-      height: 4px;
-      border: 1px solid $submenu-bg-color;
-      border-radius: 50%;
+      // height: 4px;
+      // border: 1px solid $submenu-bg-color;
+      // border-radius: 50%;
       margin-right: 15px;
       position: relative;
       box-shadow: 1px 0px 0px $sidebar-color, 0px -1px 0px $sidebar-color, 0px 1px 0px $sidebar-color,
@@ -140,6 +140,13 @@
                 transform: rotate(-45deg);
               }
             }
+            .pro-arrow-change {
+              position: absolute;
+              transform: translateY(-50%);
+              right: 0px;
+              left: 15px;
+              top: 40%;
+            }
           }
   
           &.open {
@@ -167,7 +174,7 @@
               }
   
               .pro-arrow-wrapper {
-                display: none;
+                //display: none;
               }
             }
           }
