@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects: React.FC = () => {
     return (
@@ -7,7 +8,7 @@ const Projects: React.FC = () => {
             <div className="outline">
                 <h3>C#</h3>
                 <ul>
-                    <li>BlackToonManger</li>
+                    <li><Link to="/projects/c-shap/black-toon-manger">BlackToonManger</Link></li>
                 </ul>
                 <h3>Typescript</h3>
                 <ul>

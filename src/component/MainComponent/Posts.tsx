@@ -12,7 +12,7 @@ const Posts: React.FC = () => {
             </ul>
             <h3>React</h3>
             <ul>
-                <li><Link to="/ReactCondingConvention">Coding Convention</Link></li>
+                <li><Link to="/react/conding-convention">Coding Convention</Link></li>
             </ul>
         </div>
         </>
