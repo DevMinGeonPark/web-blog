@@ -12,7 +12,7 @@
       padding-top: 73px;
       height: 100%;
       transition: width 0.7s;
-      width: 0%;
+      width: 28%;
       position: fixed;
       z-index: 101;
       
@@ -55,13 +55,19 @@
         }
       }
     }
+    @include mobile {
+      .pro-sidebar-inner {
+        width: 60%;
+      }
+    }
+    
     .closed {
-      width: 28%;
+      width: 0%;
       transition: width 0.7s;
     }
     @include fullscreenPadding {
       .pro-sidebar-inner {
-        width: 12%;
+        width: 20%;
       }
     }
 }

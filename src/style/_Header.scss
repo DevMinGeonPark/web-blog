@@ -10,6 +10,7 @@
     background-color: #fff;
     box-sizing: border-box;
     border-bottom: $testlayout; //testing black
+    
     .sidebar-button {
         cursor: pointer;
         display: none;
@@ -31,9 +32,10 @@
         .sidebar-button {
             display: flex;
         }
+
     }
     
-    @mixin ProfileStyle {
+    @mixin ProfileStyle{
         display: inline-block;
         vertical-align: middle; 
     }
@@ -83,10 +85,11 @@
     }
 
     @include fullscreenPadding {
-        a {
-            padding-left: 0;
+        .profile {
+            padding-left: 0px;
         }
     }
+
 
     .links {
         height: 50px;
@@ -142,6 +145,11 @@
                     text-decoration: none;
                     padding: 0;
                     
+                }
+            }
+            @include oldgalaxy {
+                .nav-item {
+                    display: none;
                 }
             }
             .nav-item:first-child {

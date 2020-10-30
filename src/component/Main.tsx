@@ -1,15 +1,20 @@
 import React from 'react';
+import Status from './MainComponent/Status';
+import Projects from './MainComponent/Projects';
+import Posts from './MainComponent/Posts';
+import Books from './MainComponent/Book';
 
 const Main: React.FC = () => {
     return (
         <main className="from">
             <div className="maincontent">
+                <Status />
+                <Projects />
+                <Posts />
+                <Books />
                 <h1>
-                    임시
+                    구현리스트
                 </h1>
-                <p>
-                    구현할 기능리스트
-                </p>
                 <ul>
                     <li>검색 기능</li>
                     <li>반응형 디자인</li>

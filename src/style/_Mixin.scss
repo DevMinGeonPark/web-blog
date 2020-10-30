@@ -41,3 +41,9 @@
         @content;
     }
 }
+
+@mixin oldgalaxy {
+    @media (max-width: #{$breakpoint-galaxyMin}) {
+        @content
+    }
+}
