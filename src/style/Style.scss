@@ -1,10 +1,11 @@
 @import './_Main';
 @import "./_Header";
 @import "./_Footer";
-@import "./pro-sidebar-style/_Pro-sidebar-style";
+@import "./lib/_Pro-sidebar-style";
 @import './_App';
 @import "./Variables";
 @import "./Mixin";
+@import "./Fonts";
 
 body {
     margin: 0px;

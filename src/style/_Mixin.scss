@@ -42,6 +42,12 @@
     }
 }
 
+@mixin serachboxMobileControl {
+    @media (max-width: #{$breakpoint-mobileSearchboxmin}) {
+        @content;
+    }
+}
+
 @mixin oldgalaxy {
     @media (max-width: #{$breakpoint-galaxyMin}) {
         @content

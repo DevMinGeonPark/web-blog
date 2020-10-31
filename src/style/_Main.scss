@@ -3,12 +3,19 @@
 
 .from {
     .maincontent {
+        font-family: "Merriweather-Black";
         padding: 78px 40px 0;
         width: auto;
         max-width: inherit;
-        min-height: 880px;
+        min-height: 1200px;
+        .status {
+            margin-bottom: 40px;
+        }
         .outline {
             margin-left: 35px;
+            .outline-item {
+                margin-bottom: 40px;
+            }
         }
         ul {
             //list-style: none;

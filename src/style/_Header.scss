@@ -2,6 +2,7 @@
 @import "./Mixin";
 
 .navbar {
+    font-family: "Merriweather-Black";
     padding: .7rem 1.6rem;
     line-height: 2.2rem;
     height: auto!important;
@@ -10,6 +11,7 @@
     background-color: #fff;
     box-sizing: border-box;
     border-bottom: $testlayout; //testing black
+    
     
     .sidebar-button {
         cursor: pointer;
@@ -174,6 +176,11 @@
             }
 
             
+        }
+        @include serachboxMobileControl {
+            .search-box input {
+                display: none;
+            }
         }
     }
 }
