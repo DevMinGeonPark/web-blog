@@ -29,14 +29,14 @@ const CondingConvention: React.FC = () => {
                                         <p>However, Multiple Stateless, or Pure, Components are allowed pre file.</p>
                                     </li>
                                     <li> Always use TSX syntax</li>
-                                    <li>Do not use React.createElement unless you’re initializing the app from a file that is not JSX.</li>
+                                    <li>Do not use <code>React.createElement</code> unless you’re initializing the app from a file that is not JSX.</li>
                                 </ul>
                                 <li> Do not use mixins. </li>
                                 <li>Naming
                                     <ul>
                                         <li>
                                             Extensions:
-                                            Use .tsx extension for React component
+                                            Use <code>.tsx</code> extension for React component
                                         </li>
                                         <li>
                                             Filename:
@@ -49,23 +49,71 @@ const CondingConvention: React.FC = () => {
                                         <li>
                                             Component Naming:
                                             Use the filename as the component name.
-                                            For example, App.tsx should have a reference name of App.
+                                            For example, <code>App.tsx</code> should have a reference name of <code>App</code>.
                                             However, for root components of a directory, use index.jsx as the filename and use the directory name as the component name
                                         </li>
                                         <li>
-                                            Higher-order Component Naming:
-                                            Use a composite of the higher-order component’s name and the passed-in component’s name as the displayName on the generated component.
-                                            For example, the higher-order component withFoo(), when passed a component Bar should produce a component with a displayName of withFoo(Bar).
-                                        </li>
-                                        <li>
-                                            Props Naming: Avoid using DOM component prop names for different purposes.<br/>
+                                            Props Naming: Avoid using DOM component prop names for different purposes.<br />
                                             ::variant 공부 후 변경하기.
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    Alignment: Follow these alignment styles for JSX syntax.
+                                        </li>
+                                <li>
+                                    Quotes: Always use double quotes ("") for JSX attributes, but single quotes ('') for all other JS.
+                                        </li>
+                                <li>
+                                    Spacing:
+                                            <ul>
+                                        <li>
+                                            Always include a single space in your self0closing tag.
+                                                </li>
+                                        <li> Do not pad Jsx curly braces with spaces.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Props:
+                                            <ul>
+                                        <li>Always use camelCase for props names, or Pascal Case if the prop value is a React component.</li>
+                                        <li>Omit the value of the prop when it is explicitly true.</li>
+                                        <li>Always inclued an alt prop on <code>&#60;img&#62;</code> tag.
+                                                if the image is presentational, alt can be an empty string or the
+                                                <code>&#60;img&#62;</code> must have <code>role="presentation"</code></li>
+                                        <li>Do not use words like "image", "photo", or "pictrue" in <code>&#60;img&#62;</code> <code>alt</code> props.</li>
+                                        <li>Use only valid, non-abstract ARIA roles.</li>
+                                        <li>Do not <code>accessKey</code> on elements.</li>
+                                        <li>
+                                            Avoid using an array index as key prop, prefer a stable ID <br />
+                                            We don't recommend using indexes for keys if the order of items may change.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Refs:
+                                            <ul><li>Always use ref callbacks.</li></ul>
+                                </li>
+                                <li>Parentheses:
+                                            <ul><li>Wrap JSX tags in parentheses when they span more than one line.</li></ul>
+                                </li>
+                                <li>Tag:
+                                    <ul>
+                                        <li>Always self-close tag that have no children.</li>
+                                        <li>If your component has multiline properties, close tis tag on a new line.</li>
+                                    </ul> 
+                                </li>
+                                <li>Methods:
+                                    <ul>
+                                        <li>
+                                            Use arrow functions to close over loacl variables. it is handy when your need to pass additional data to an event handler.<br/>
+                                            Bind event handlers for the render method in the constructor.
+                                        </li>
+                                        <li>Do not use underscore prefix for internal methods of a React component</li>
+                                        <li>Be sure to return a balue in your <code>render</code> methods.</li>
+                                    </ul>
+                                </li>
                             </li>
                         </ul>
-                        추가예정
                     </div>
                 </div>
             </div>

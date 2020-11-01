@@ -12,7 +12,7 @@ const Navigation: React.FC = () => {
             <Route path="/projects/c-shap/black-toon-manger" exact component={BlackToonManger} />
             <Route path="/python/image-manger" exact component={ImageManger} />
             <Route path="/react/conding-convention" exact component={ReactCondingConvention} />
-            <Redirect path="*" to="/" />
+            {/* <Redirect path="*" to="/" /> */}
         </Switch>
     );
 }
