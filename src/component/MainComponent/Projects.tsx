@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Projects: React.FC = () => {
     return (
-        <>
+        <div className="Projects">
             <h2>Projects</h2>
             <div className="outline">
                 <div className="outline-item">
@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
                     </ul>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 export default Projects;

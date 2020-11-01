@@ -1,5 +1,6 @@
 import React from 'react';
 import Main from './component/Main';
+import Profile from './component/MainComponent/Profile'
 import ReactCondingConvention from './component/Post/React/CondingConvention';
 import BlackToonManger from './component/Projects/Cshap/BlackToonManger';
 import ImageManger from 'component/Projects/Python/ImageManger';
@@ -9,6 +10,7 @@ const Navigation: React.FC = () => {
     return (
         <Switch>
             <Route path="/" exact component={Main} />
+            <Route path="/profile" exact component={Profile} />
             <Route path="/projects/c-shap/black-toon-manger" exact component={BlackToonManger} />
             <Route path="/python/image-manger" exact component={ImageManger} />
             <Route path="/react/conding-convention" exact component={ReactCondingConvention} />
