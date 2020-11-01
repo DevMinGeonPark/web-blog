@@ -4,13 +4,13 @@ import Footer from './component/Footer';
 import Posts from './component/sidebarComponent/Posts';
 import Projects from 'component/sidebarComponent/Projects';
 import Navigation from './Navigation';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { ProSidebar, Menu } from 'react-pro-sidebar';
 import 'style/Style.scss';
 
 const App: React.FC = () => {
     return (
-        <BrowserRouter basename={"/Blog"}>
+        <HashRouter basename={"/Blog"}>
             <Header />
             <div className="sidebar-mask" />
             <ProSidebar>
@@ -21,7 +21,7 @@ const App: React.FC = () => {
             </ProSidebar>
             <Navigation />
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 export default App;

@@ -8,11 +8,11 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 const Navigation: React.FC = () => {
     return (
         <Switch>
-            <Route path="/Blog" exact component={Main} />
-            <Route path="/Blog/projects/c-shap/black-toon-manger" exact component={BlackToonManger} />
-            <Route path="/Blog/python/image-manger" exact component={ImageManger} />
-            <Route path="/Blog/react/conding-convention" exact component={ReactCondingConvention} />
-            <Redirect path="*" to="/Blog" />
+            <Route path="/" exact component={Main} />
+            <Route path="/projects/c-shap/black-toon-manger" exact component={BlackToonManger} />
+            <Route path="/python/image-manger" exact component={ImageManger} />
+            <Route path="/react/conding-convention" exact component={ReactCondingConvention} />
+            <Redirect path="*" to="/" />
         </Switch>
     );
 }
