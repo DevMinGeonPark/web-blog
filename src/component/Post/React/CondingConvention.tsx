@@ -4,10 +4,10 @@ const CondingConvention: React.FC = () => {
     return (
         <main className="from">
             <div className="maincontent">
-                <h2>React Coding Convention</h2>
+                <h2>React Coding Convention : don't complete</h2>
                 <div className="outline">
                     <div className="outline-item">
-                        <h3>Introduction</h3>
+                        <h3 className="sub-title">Introduction</h3>
                         <p>
                             블로그를 개발하던 중 막히는 부분들이 많았다.
                             그런데 그 이유가 기술의 개념적인 부분들을 몰라서 그런 경우도 많지만,
@@ -20,7 +20,7 @@ const CondingConvention: React.FC = () => {
                         </p>
                     </div>
                     <div className="outline-item">
-                        <h3>Main Subject</h3>
+                        <h3 className="sub-title">Main Subject</h3>
                         <ul>
                             <li>
                                 Basic Rule
@@ -44,33 +44,90 @@ const CondingConvention: React.FC = () => {
                                         </li>
                                         <li>
                                             Reference Naming:
-                                            use PascalCase for React component and camelCase for their instances.
+                                            use PascalCase for React component and camelCase for their instances.<br />
+                                            <pre className="codebox">
+                                                <p>// bad</p>
+                                                <p>import reservationCard from './ReservationCard';</p>
+
+                                                <p>// good</p>
+                                                <p>import ReservationCard from './ReservationCard';</p>
+
+                                                <p>// bad</p>
+                                                <p>const ReservationItem = &#60;ReservationCard /&#62;</p>
+
+                                                <p>// good</p>
+                                                <p>const reservationItem = &#60;ReservationCard /&#62;;</p>
+                                            </pre>
                                         </li>
                                         <li>
                                             Component Naming:
                                             Use the filename as the component name.
                                             For example, <code>App.tsx</code> should have a reference name of <code>App</code>.
                                             However, for root components of a directory, use index.jsx as the filename and use the directory name as the component name
+                                            <pre className="codebox">
+                                                <p>// bad</p>
+                                                <p>import Footer from './Footer/Footer';</p>
+
+                                                <p>// bad</p>
+                                                <p>import Footer from './Footer/Footer';</p>
+
+                                                <p>// good</p>
+                                                <p>import Footer from '</p>
+                                            </pre>
                                         </li>
                                         <li>
                                             Props Naming: Avoid using DOM component prop names for different purposes.<br />
                                             ::variant 공부 후 변경하기.
+                                            <pre className="codebox">
+                                                <p>// bad</p>
+                                                <p>&#60;MyComponent style="fancy" /&#62;</p>
+
+                                                <p>// bad</p>
+                                                <p>&#60;MyComponent ClassName="fancy" /&#62;</p>
+
+                                                <p>// good</p>
+                                                <p>&#60;MyComponent variant="fancy" /&#62;</p>
+                                            </pre>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     Alignment: Follow these alignment styles for JSX syntax.
-                                        </li>
+                                    <div className="codebox">
+
+                                    </div>
+                                </li>
                                 <li>
                                     Quotes: Always use double quotes ("") for JSX attributes, but single quotes ('') for all other JS.
-                                        </li>
+                                    <div className="codebox">
+                                        <p>// bad</p>
+                                        <p>&#60; Foo bar='bar' /&#62;</p>
+                                        <p>// good</p>
+                                        <p>&#60; Foo style= &#123;&#123; left: "20px" &#125;&#125; /&#62;</p>
+                                        <p>&#60; Foo style= &#123;&#123; left: '20px' &#125;&#125; /&#62;</p>
+                                    </div>
+                                </li>
                                 <li>
                                     Spacing:
                                             <ul>
                                         <li>
                                             Always include a single space in your self0closing tag.
-                                                </li>
+                                            <div className="codebox">
+                                                <p>// bad</p>
+                                                <p>&#60;Foo/&#62;</p>
+                                                <p>// bad</p>
+                                                <p>&#60;Foo<br/>
+                                                / &#62;</p>
+                                                <p>&#60;Foo /&#62;</p>
+                                            </div>
+                                        </li>
                                         <li> Do not pad Jsx curly braces with spaces.</li>
+                                        <div className="codebox">
+                                            <p>// bad</p>
+                                            <p>&#60;Foo bar=&#123; bax &#125; /&#62;</p>
+                                            <p>// bad</p>
+                                            <p>&#60;Foo bar=&#123;bax&#125; /&#62;</p>
+                                        </div>
                                     </ul>
                                 </li>
                                 <li>
@@ -100,12 +157,12 @@ const CondingConvention: React.FC = () => {
                                     <ul>
                                         <li>Always self-close tag that have no children.</li>
                                         <li>If your component has multiline properties, close tis tag on a new line.</li>
-                                    </ul> 
+                                    </ul>
                                 </li>
                                 <li>Methods:
                                     <ul>
                                         <li>
-                                            Use arrow functions to close over loacl variables. it is handy when your need to pass additional data to an event handler.<br/>
+                                            Use arrow functions to close over loacl variables. it is handy when your need to pass additional data to an event handler.<br />
                                             Bind event handlers for the render method in the constructor.
                                         </li>
                                         <li>Do not use underscore prefix for internal methods of a React component</li>

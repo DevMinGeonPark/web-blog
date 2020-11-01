@@ -9,7 +9,7 @@ const Status: React.FC = () => {
                 영어를 잘하는 것은 아니지만 많이 사용해야 익숙해지고 실력향상이 된다는 생각에 자주 쓰려고 하고 있습니다. 영어가 많아도 이해해주세요!
             </p>
             <ul>
-                <li><a href="https://github.com/DevMinGeonPark?tab=repositories">
+                <li><a href="https://github.com/DevMinGeonPark?tab=repositories" target="_block">
                     Repository</a>
                 </li>
             </ul>

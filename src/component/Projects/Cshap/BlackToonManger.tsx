@@ -1,12 +1,13 @@
 import React from 'react';
+import {BsLink45Deg} from 'react-icons/bs';
 
 const BlackToonManger: React.FC = () => {
     return (
         <main className="from">
             <div className="maincontent">
                 <h2>Project : BlackToonManger With C#</h2>
-                <a href="https://github.com/DevMinGeonPark/BlackToonManger">Github</a>
-                <h4>개발동기</h4>
+                <a href="https://github.com/DevMinGeonPark/BlackToonManger">Github<BsLink45Deg /></a>
+                <h4 className="sub-title">개발동기</h4>
                 <p>고교 떄 C언어, 대학에서 python을 공부했지만 대부분의 프로젝트가 Toy-Project 
                     수준도 되지못하는 기초적인 수준의 별찍기나 포인터를 활용한 전화번호부 만들기 정도 밖에 
                     해보지 못했다. 공군을 지원해 개발병으로 군생활을 해보니 나와 비슷한 나이에 뛰어난 실력을 가진 사람들이 
@@ -15,7 +16,7 @@ const BlackToonManger: React.FC = () => {
                     사이트는 테스트위주의 개발을 진행했고, 그 과정에서 서버로 보내는 요청이 상당히 많아서 네이버같은 사이트는 차단당할 위험이 크다 생각해 선정하게 되었다.
                 </p>
 
-                <h4>프로그램 설명</h4>
+                <h4 className="sub-title">프로그램 설명</h4>
                 <p>
                     기본적으로 콘솔창으로 실행하는 프로그램. GUI로 구성하지 않은 이유는 비동기적으로 GUI를 굳이 보여줄 필요가 없다고 생각해서이다. <br />
                     사용자에게 파일명을 입력받고 사이트에 요청을 보낸다. 여기서 사이트는 리다이렉션되는 사이트에 자동으로 접속하게 구현했다. <br />
@@ -26,12 +27,12 @@ const BlackToonManger: React.FC = () => {
                     유저의 선택에 따라 다운로드를 진행한다. 다운로드 진행중에는 폴더를 자동으로 만들며, 자동으로 압축까지 진행하여 저장한다.<br />
                 </p>
 
-                <h4>예상되는 오류</h4>
+                <h4 className="sub-title">예상되는 오류</h4>
                 <p>
                     사이트 관리자가 div태그를 한 개 더 추가하는 방식으로 크롤링을 피하려하는 경우가 많다. null이 반환되었다는 오류는 주로 이 경우이다.
                 </p>
 
-                <h4>후기</h4>
+                <h4 className="sub-title">후기</h4>
                 <p>
                     아무것도 모르는 상태에서 시작한거라 모든 것들이 다 어렵고 새로웠다. <br />
                     코딩 컨벤션, 비동기적 프로그래밍, 서버에 요청을 보내거나 받기, Josn파일 처리, 크롤링 방법론, C#의 기술들과 객체지향의 기본적인 개념 등을 배웠고,

@@ -2,7 +2,7 @@
 @import "./Mixin";
 
 .navbar {
-    font-family: "Merriweather-Black";
+    font-family: "Roboto-Regular";
     padding: .7rem 1.6rem;
     line-height: 2.2rem;
     height: auto!important;
@@ -10,7 +10,7 @@
     right: 0;
     background-color: #fff;
     box-sizing: border-box;
-    border-bottom: $testlayout; //testing black
+    border-bottom: $headborder; //testing black
     
     
     .sidebar-button {
@@ -44,7 +44,7 @@
     
     .profile {
         @include profileStyle();
-        font-weight: 500;
+        font-weight: 700;
         padding-left: 3rem;
         text-decoration: none;
         color: #000;
