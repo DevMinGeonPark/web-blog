@@ -16,7 +16,7 @@ const CondingConvention: React.FC = () => {
                             그러다보니 계속 이런식이면 변화가 없다는 생각이 문득 들어 React의 conding Convention을 찾던 중
                             AirBnB에서 Github에 올린 "Airbnb React/JSX Style Guide"를 참고하게되었다. 또한 필요하다고 생각되는 부분만 발췌하였고 내 경우에 맞게 변경하였다.
                             아직 가이드에 맞게 수정하는 중이라 가이드대로 되지 않은 부분들이 많지만 관련된 부분들을 정리해두는게 좋을 것 같아 작성하게되었다. <br />
-                            자세한 내용은 https://github.com/airbnb/javascript/tree/master/react에서 참고가능하다.
+                            자세한 내용은 "https://github.com/airbnb/javascript/tree/master/react"에서 참고가능하다.
                         </p>
                     </div>
                     <div className="outline-item">
@@ -46,16 +46,16 @@ const CondingConvention: React.FC = () => {
                                             Reference Naming:
                                             use PascalCase for React component and camelCase for their instances.<br />
                                             <pre className="codebox">
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>import reservationCard from './ReservationCard';</p>
 
-                                                <p>// good</p>
+                                                <p>good</p>
                                                 <p>import ReservationCard from './ReservationCard';</p>
 
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>const ReservationItem = &#60;ReservationCard /&#62;</p>
 
-                                                <p>// good</p>
+                                                <p>good</p>
                                                 <p>const reservationItem = &#60;ReservationCard /&#62;;</p>
                                             </pre>
                                         </li>
@@ -65,13 +65,13 @@ const CondingConvention: React.FC = () => {
                                             For example, <code>App.tsx</code> should have a reference name of <code>App</code>.
                                             However, for root components of a directory, use index.jsx as the filename and use the directory name as the component name
                                             <pre className="codebox">
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>import Footer from './Footer/Footer';</p>
 
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>import Footer from './Footer/Footer';</p>
 
-                                                <p>// good</p>
+                                                <p>good</p>
                                                 <p>import Footer from '</p>
                                             </pre>
                                         </li>
@@ -79,13 +79,13 @@ const CondingConvention: React.FC = () => {
                                             Props Naming: Avoid using DOM component prop names for different purposes.<br />
                                             ::variant 공부 후 변경하기.
                                             <pre className="codebox">
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>&#60;MyComponent style="fancy" /&#62;</p>
 
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>&#60;MyComponent ClassName="fancy" /&#62;</p>
 
-                                                <p>// good</p>
+                                                <p>good</p>
                                                 <p>&#60;MyComponent variant="fancy" /&#62;</p>
                                             </pre>
                                         </li>
@@ -100,9 +100,9 @@ const CondingConvention: React.FC = () => {
                                 <li>
                                     Quotes: Always use double quotes ("") for JSX attributes, but single quotes ('') for all other JS.
                                     <div className="codebox">
-                                        <p>// bad</p>
+                                        <p>bad</p>
                                         <p>&#60; Foo bar='bar' /&#62;</p>
-                                        <p>// good</p>
+                                        <p>good</p>
                                         <p>&#60; Foo style= &#123;&#123; left: "20px" &#125;&#125; /&#62;</p>
                                         <p>&#60; Foo style= &#123;&#123; left: '20px' &#125;&#125; /&#62;</p>
                                     </div>
@@ -113,9 +113,9 @@ const CondingConvention: React.FC = () => {
                                         <li>
                                             Always include a single space in your self0closing tag.
                                             <div className="codebox">
-                                                <p>// bad</p>
+                                                <p> bad</p>
                                                 <p>&#60;Foo/&#62;</p>
-                                                <p>// bad</p>
+                                                <p>bad</p>
                                                 <p>&#60;Foo<br/>
                                                 / &#62;</p>
                                                 <p>&#60;Foo /&#62;</p>
@@ -123,9 +123,9 @@ const CondingConvention: React.FC = () => {
                                         </li>
                                         <li> Do not pad Jsx curly braces with spaces.</li>
                                         <div className="codebox">
-                                            <p>// bad</p>
+                                            <p>bad</p>
                                             <p>&#60;Foo bar=&#123; bax &#125; /&#62;</p>
-                                            <p>// bad</p>
+                                            <p>bad</p>
                                             <p>&#60;Foo bar=&#123;bax&#125; /&#62;</p>
                                         </div>
                                     </ul>

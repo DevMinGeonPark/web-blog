@@ -1,43 +1,44 @@
 @import "./Variables";
 
 @mixin mobile {
-    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-middlemobile + 1}) {
         @content;
     }
 }
 
+@mixin middlemobile {
+    @media (min-width: #{$breakpoint-middlemobile + 1}) and (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+
 @mixin tablet {
-    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin nonDesktop {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: #{$breakpoint-desktop}) {
+    @media (min-width: #{$breakpoint-desktop}) and (max-width: #{$breakpoint-sidebarlimit}) {
         @content;
     }
 }
 
-@mixin fullScreen {
-    @media (max-width: #{$breakpoint-fullScreen}) {
-        @content;
-    }
-}
-
-@mixin fullscreenPadding {
-    @media (min-width: #{$breakpoint-fullScreen}) {
+@mixin desktopNonSidebar {
+    @media (min-width: #{$breakpoint-sidebarlimit}) {
         @content;
     }
 }
 
 @mixin serachboxhiden {
-    @media (max-width: #{$breakpoint-searchbox}) {
-        @content;
-    }
-}
-
-@mixin fullScreenSidebar {
-    @media (min-width: #{$breakpoint-fullScreen}) {
+    @media (max-width: #{$breakpoint-desktop}) {
         @content;
     }
 }
@@ -53,3 +54,4 @@
         @content
     }
 }
+

@@ -56,9 +56,10 @@
         }
       }
     }
+
     @include mobile {
       .pro-sidebar-inner {
-        width: 60%;
+        width: 40%;
       }
     }
     
@@ -66,9 +67,10 @@
       width: 0%;
       transition: width 0.7s;
     }
-    @include fullscreenPadding {
+
+    @include desktopNonSidebar {
       .pro-sidebar-inner {
-        width: 13%;
+        width: 18%;
       }
     }
 }

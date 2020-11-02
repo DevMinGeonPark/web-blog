@@ -21,7 +21,7 @@ const Profile: React.FC = () => {
                         <div className="card">
                             <div className="link-list">
                                 <ul>
-                                    <li>
+                                    <li className="link-item">
                                         <h6>Website</h6>
                                         <span>DevMinGeonPark</span>
                                     </li>
@@ -45,13 +45,10 @@ const Profile: React.FC = () => {
                         <div className="personal-status">
                             <div className="card">
                                 <div className="card-body">
-                                    <div className="link-list">
-                                        <ul>
-                                            <li>
-                                                <div className="col"><h6>Full Name</h6></div>
-                                                <div>MinGeonPark</div>
-                                            </li>
-                                        </ul>
+                                    <div className="status">
+                                        <div className="status-key"><h6>Full Name</h6></div>
+                                        <div className="status-item">MinGeonPark</div>
+                                        <hr/>
                                     </div>
                                 </div>
                             </div>

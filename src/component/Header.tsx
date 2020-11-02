@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             <div className="sidebar-button" onClick={() => setOpen(!open)}>
                 <BsList size="25px" color="black" role="img" className="icon" />
             </div>
-            <Link to="/profile">
+            <Link to="/">
                 <div className="profile">
                     <figure>
                         <img src="https://s3.ivisa.com/website-assets/blog/id-photo2.jpg" 
