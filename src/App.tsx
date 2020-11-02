@@ -10,7 +10,7 @@ import './scss/Style.scss';
 
 const App: React.FC = () => {
     return (
-        <HashRouter basename={"/Blog"}>
+        <HashRouter>
             <Header />
             <div className="sidebar-mask" />
             <ProSidebar>
