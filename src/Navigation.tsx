@@ -1,9 +1,9 @@
 import React from 'react';
 import Main from './component/Main';
-import Profile from './component/MainComponent/Profile'
-import ReactCondingConvention from './component/Post/React/CondingConvention';
-import BlackToonManger from './component/Projects/Cshap/BlackToonManger';
-import ImageManger from 'component/Projects/Python/ImageManger';
+import Profile from './component/mainComponent/Profile'
+import ReactCondingConvention from './component/post/react/CondingConvention';
+import BlackToonManger from './component/projects/cShap/BlackToonManger';
+import ImageManger from 'component/projects/python/ImageManger';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 const Navigation: React.FC = () => {

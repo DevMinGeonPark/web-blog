@@ -1,8 +1,7 @@
 import React from 'react';
-import Status from './MainComponent/Status';
-import Projects from './MainComponent/Projects';
-import Posts from './MainComponent/Posts';
-//import Books from './MainComponent/Book';
+import Status from './mainComponent/Status';
+import Projects from './mainComponent/Projects';
+import Posts from './mainComponent/Posts';
 
 const Main: React.FC = () => {
     return (
@@ -11,7 +10,6 @@ const Main: React.FC = () => {
                 <Status />
                 <Projects />
                 <Posts />
-                {/* <Books /> */}
                 <h1>추가 구현예정</h1>
                 <ul>
                     <li>검색 기능</li>

@@ -6,7 +6,7 @@ import Projects from 'component/sidebarComponent/Projects';
 import Navigation from './Navigation';
 import { HashRouter } from 'react-router-dom';
 import { ProSidebar, Menu } from 'react-pro-sidebar';
-import 'style/Style.scss';
+import './scss/Style.scss';
 
 const App: React.FC = () => {
     return (
