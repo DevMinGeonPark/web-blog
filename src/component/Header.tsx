@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <Link to="/">
                 <div className="profile">
                     <figure>
-                        <img src="https://s3.ivisa.com/website-assets/blog/id-photo2.jpg" 
+                        <img src="https://devmingeonpark.github.io/MyPoto/MyProfilePhoto_var2.jpg" 
                         alt="profile" />
                     </figure>
                     <div>

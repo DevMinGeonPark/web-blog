@@ -13,10 +13,10 @@ const Main: React.FC = () => {
                 <h1>추가 구현예정</h1>
                 <ul>
                     <li>검색 기능</li>
-                    <li>반응형 디자인 +) galaxy font 유지보수</li>
+                    <li>반응형 디자인 유지보수</li>
                     <li>댓글기능</li>
                     <li>로그인 기능</li>
-                    <li>개인 프로필 사이트 만들기</li>
+                    <li>개인 프로필 컴포넌트 만들기</li>
                 </ul>
             </div>
         </main>

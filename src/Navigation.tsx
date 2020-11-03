@@ -4,6 +4,7 @@ import Profile from './component/mainComponent/Profile'
 import ReactCondingConvention from './component/post/react/CondingConvention';
 import BlackToonManger from './component/projects/cShap/BlackToonManger';
 import ImageManger from 'component/projects/python/ImageManger';
+import Blog from 'component/projects/typescript/Blog';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 const Navigation: React.FC = () => {
@@ -12,6 +13,7 @@ const Navigation: React.FC = () => {
             <Route path="/" exact component={Main} />
             <Route path="/profile" exact component={Profile} />
             <Route path="/projects/c-shap/black-toon-manger" exact component={BlackToonManger} />
+            <Route path="/projects/typescript/blog" exact component={Blog} />
             <Route path="/python/image-manger" exact component={ImageManger} />
             <Route path="/react/conding-convention" exact component={ReactCondingConvention} />
             <Redirect path="*" to="/" />

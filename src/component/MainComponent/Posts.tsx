@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BsLink45Deg } from 'react-icons/bs';
+
 
 const Posts: React.FC = () => {
     return (
@@ -15,7 +17,7 @@ const Posts: React.FC = () => {
                 <div className="outline-item">
                     <h3>React</h3>
                     <ul>
-                        <li><Link to="/react/conding-convention">Coding Convention</Link></li>
+                        <li><Link to="/react/conding-convention">Coding Convention<BsLink45Deg /></Link></li>
                     </ul>
                 </div>
             </div>

@@ -8,7 +8,8 @@ const BlackToonManger: React.FC = () => {
                 <h2>Project : BlackToonManger With C#</h2>
                 <a href="https://github.com/DevMinGeonPark/BlackToonManger">Github<BsLink45Deg /></a>
                 <h4 className="sub-title">개발동기</h4>
-                <p>고교 떄 C언어, 대학에서 python을 공부했지만 대부분의 프로젝트가 Toy-Project 
+                <p>
+                    고교 떄 C언어, 대학에서 python을 공부했지만 대부분의 프로젝트가 Toy-Project 
                     수준도 되지못하는 기초적인 수준의 별찍기나 포인터를 활용한 전화번호부 만들기 정도 밖에 
                     해보지 못했다. 공군을 지원해 개발병으로 군생활을 해보니 나와 비슷한 나이에 뛰어난 실력을 가진 사람들이 
                     너무나 많았고 나도 한번 제대로 된 Toy-Project를 만들어보자는 생각에 평소 좋아하던 웹툰이나 만화를 받아볼 수 있는 프로그램을 만들어보게 되었다. <br/>

@@ -11,11 +11,10 @@
     background-color: #fff;
     box-sizing: border-box;
     border-bottom: $headborder; //testing black
-    
-    
+        
     .sidebar-button {
         cursor: pointer;
-        display: none;
+        display: none; //
         width: 1.25rem;
         height: 50px;
         position: absolute;
@@ -23,18 +22,11 @@
         top: 0;
         left: 1rem;
         align-items: center;
-        
         .icon {
             display: block;
             width: 1.25rem;
             height: 1.25rem;
         }
-    }
-    @include desktop {
-        .sidebar-button {
-            display: flex;
-        }
-
     }
     
     @mixin profileStyle{
@@ -50,6 +42,7 @@
         color: #000;
         line-height: 130%;
         text-align: center;
+        
 
         figure {
             @include profileStyle();
@@ -88,8 +81,17 @@
 
     @include nonDesktop {
         .profile {
-            padding: 0px;
+            padding-left: 0px;
         }
+    }
+
+    @include sidebar {
+        .sidebar-button {
+            display: flex;
+        }  
+        .profile {
+            padding-left: 2.2rem;
+        }  
     }
 
     @include desktopNonSidebar {
@@ -133,7 +135,6 @@
                 outline: none;
                 background: white url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png) .5rem no-repeat;
                 background-size: 1rem;
-
             }
         }
 
@@ -152,16 +153,16 @@
                     font-weight: 500;
                     text-decoration: none;
                     padding: 0;
-                    
                 }
             }
             @include oldgalaxy {
                 .nav-item {
                     display: none;
                 }
-            }
-            .nav-item:first-child {
-                margin-left: 0;
+                &:first-child {
+                    margin-left: 0;
+                }
+                
             }
         }
         @include mobile {
@@ -172,46 +173,39 @@
                 display: none;
             }
         }
-        @include middlemobile {
-            .search-box input{
-                cursor: pointer;
-                width: 0px;
-                border-color: transparent;
-                position: relative;
-            }
-            .search-box input:focus {
-                width: 10rem;
-                cursor: text;
-                border: 1px solid #cfd4db;
-                transition: width 0.5s;
-            }
-            .nav-links {
-                display: none;
-            }
+        @include middleMobile {
 
-        }
-        @include tablet {   
             .search-box input{
-                cursor: pointer;
                 width: 0px;
                 border-color: transparent;
-                position: relative;
             }
             .search-box input:focus {
-                width: 10rem;
-                cursor: text;
+                width: 2rem;
                 border: 1px solid #cfd4db;
                 transition: width 0.5s;
             }
             .can-hide {
                 display: none;
             }
+        }
 
-            
+        @include middleSearchbar {
+
+            .search-box input{
+                width: 0px;
+                border-color: transparent;
+            }
+            .search-box input:focus {
+                width: 6rem;
+                border: 1px solid #cfd4db;
+                transition: width 0.5s;
+            }
+            .can-hide {
+                display: none;
+            }
         }
     }
 }
-
 .navbar, .sidebar-mask {
     position: fixed;
     top: 0;

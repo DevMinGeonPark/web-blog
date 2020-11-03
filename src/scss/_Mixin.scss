@@ -1,13 +1,19 @@
 @import "./Variables";
 
 @mixin mobile {
-    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-middlemobile + 1}) {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-middleMobile + 1}) {
         @content;
     }
 }
 
-@mixin middlemobile {
-    @media (min-width: #{$breakpoint-middlemobile + 1}) and (max-width: #{$breakpoint-tablet}) {
+@mixin middleMobile {
+    @media (min-width: #{$breakpoint-middleMobile + 1}) and (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+@mixin middleSearchbar {
+    @media (min-width: #{$breakpoint-middleSearchbar}) and (max-width: #{$breakpoint-tablet}){
         @content;
     }
 }
@@ -25,11 +31,18 @@
     }
 }
 
+@mixin sidebar {
+    @media (min-width: #{$breakpoint-middleMobile + 1}) and (max-width: #{$breakpoint-desktop + 1}) {
+       @content; 
+    }
+}
+
 @mixin desktop {
     @media (min-width: #{$breakpoint-desktop}) and (max-width: #{$breakpoint-sidebarlimit}) {
         @content;
     }
 }
+
 
 @mixin desktopNonSidebar {
     @media (min-width: #{$breakpoint-sidebarlimit}) {
