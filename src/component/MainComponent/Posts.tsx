@@ -11,7 +11,7 @@ const Posts: React.FC = () => {
                 <div className="outline-item">
                     <h3>Javscript</h3>
                     <ul>
-                        <li>Basic Syntax</li>
+                        {/* <li><Link to="/post/javascript/basicsyntax-1">Basic Syntax - prototype</Link></li> */}
                     </ul>
                 </div>
                 <div className="outline-item">

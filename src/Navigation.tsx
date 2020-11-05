@@ -6,6 +6,7 @@ import BlackToonManger from './component/projects/cShap/BlackToonManger';
 import ImageManger from 'component/projects/python/ImageManger';
 import Blog from 'component/projects/typescript/Blog';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import BasicSyntax from 'component/post/javascript/BasicSyntax';
 
 const Navigation: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const Navigation: React.FC = () => {
             <Route path="/projects/typescript/blog" exact component={Blog} />
             <Route path="/python/image-manger" exact component={ImageManger} />
             <Route path="/react/conding-convention" exact component={ReactCondingConvention} />
+            <Route path="/post/javascript/basicsyntax-1" exact component={BasicSyntax} />
             <Redirect path="*" to="/" />
         </Switch>
     );
