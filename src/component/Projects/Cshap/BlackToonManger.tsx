@@ -6,7 +6,7 @@ const BlackToonManger: React.FC = () => {
         <main className="from">
             <div className="maincontent">
                 <h2>Project : BlackToonManger With C#</h2>
-                <a href="https://github.com/DevMinGeonPark/BlackToonManger">Github<BsLink45Deg /></a>
+                <a href="https://github.com/DevMinGeonPark/Project-BlackToonManager">Github<BsLink45Deg /></a>
                 <h4 className="sub-title">개발동기</h4>
                 <p>
                     고교 떄 C언어, 대학에서 python을 공부했지만 대부분의 프로젝트가 Toy-Project 

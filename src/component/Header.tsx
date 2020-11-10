@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BsList, BsLink45Deg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Photo from "./img/MyProfilePhoto.jpg";
 
 const Header: React.FC = () => {
     const [open, setOpen] = useState(true);
@@ -21,7 +22,7 @@ const Header: React.FC = () => {
             <Link to="/">
                 <div className="profile">
                     <figure>
-                        <img src="https://devmingeonpark.github.io/MyPoto/MyProfilePhoto_var2.jpg" 
+                        <img src={Photo} 
                         alt="profile" />
                     </figure>
                     <div>
