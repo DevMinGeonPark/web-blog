@@ -85,6 +85,12 @@
         }
     }
 
+    @include desktop {
+        .profile {
+            padding-left: 0px;
+        }
+    }
+
     @include sidebar {
         .sidebar-button {
             display: flex;
